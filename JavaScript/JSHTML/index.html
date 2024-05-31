@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS First Page</title>
+</head>
+<body>
+    <p id="info"></p>
+    <button onmouseout="openURL();">Open URL</button>
+    <button  id="alert" name="alert" onmouseout="openalert();">Open Alert</button>
+    <button  id="msg" name="msg">Open Msg</button>
+    <script>
+        function openURL(event){
+            // window.open("https://www.google.com");/
+            // document.location.url="https://www.google.com";
+            // window.location.assign can also be used.
+            // history.forward();
+            // document.getElementById("info").innerHTML="<h1>Hello</h1>";
+            // document.getElementById("info").innerText=navigator.name;
+            // document.getElementById("info").innerText="<h1>Hello</h1>";
+            document.getElementById("info").innerHTML=event.target.name;
+        }
+        // const alertbtn=document.getElementById("alert");
+        const alertbtn=document.querySelector("#alert");
+        alertbtn.onclick=()=>{
+            window.alert("Welcome to JS");
+        }
+        const msgbtn=document.getElementById("msg");
+        msgbtn=addEventListener("click",()=>{
+            alert("This is msg");
+        });
+    </script>
+</body>
+</html>

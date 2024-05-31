@@ -1,0 +1,82 @@
+*{
+    margin:0px 50px;
+    padding: 0;
+    /* padding-bottom: 20px; */
+}
+:root{
+    --headingbg: #FF9E80;
+    --bodycolor: #FBE9E7;
+    --hovercolor: #BF360C;
+    --hovertxtcolor: #FBE9E7;
+    --tablecell: #FF7043;
+}
+body{
+    background-color:var(--bodycolor);
+}
+h1{
+    text-align: center;
+    text-decoration: underline ;
+    margin: 30px;
+    background-color:var(--headingbg);
+    /* color: white; */
+}
+h2{
+    padding-left: 100px;
+    margin: 20px;
+    background-color: var(--headingbg);
+}
+table{
+    width: 800px;
+}
+td{
+    padding: 5px;
+    /* background-color: var(--hovertxtcolor); */
+}
+tr:nth-child(even){
+    background-color: var(--tablecell);
+}
+p{
+    text-align: justify;
+}
+p,label,li{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li{
+    margin: 3px;
+}
+span{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--tablecell);
+    font-weight: bold;
+}
+span a{
+    text-decoration: none;
+    color:black;
+}
+span:hover{
+    background-color: var(--hovercolor);
+    color: white;
+}
+span a:hover{
+    color: white;
+}
+b{
+    background-color: var(--tablecell);
+}
+input{
+    width: 40vw;
+}
+.mybtn{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--tablecell);
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+img{
+    border-radius: 50px;
+}
